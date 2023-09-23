@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  flask:
+    build:
+      context: server
+    volumes:
+      - ./static:/static
+    ports:
+      - "10000:80"
